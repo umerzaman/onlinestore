@@ -19,6 +19,12 @@ namespace API.Controllers
             this._context = context;
             
         }
+        [HttpGet]
+        public async  Task<ActionResult<List<Product>>> Index()
+        {
+
+            return   await _context.Products.ToListAsync();  
+        }
 
         [HttpGet]
         public async  Task<ActionResult<List<Product>>> GetProducts()
