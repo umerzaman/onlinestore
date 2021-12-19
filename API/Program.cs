@@ -59,6 +59,6 @@ app.MapControllers();
 app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapFallbackToController("Index", "Products");
+//endpoints.MapFallbackToController("GetProducts", "Products");
             });
 app.Run();
